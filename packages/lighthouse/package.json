@@ -1,5 +1,5 @@
 {
-  "name": "@JamesSeymour/lighthouse",
+  "name": "@jamesseymour/lighthouse",
   "version": "1.3.1",
   "main": "index.js",
   "author": "Marvin FRACHET <marvin.frachet@gmail.com> (https://github.com/mfrachet)",
@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@JamesSeymour/shared": "^1.3.1",
+    "@jamesseymour/shared": "^1.3.1",
     "lighthouse": "^9.6.3"
   },
   "scripts": {
