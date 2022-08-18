@@ -4,5 +4,5 @@
     "packages/pa11y",
     "packages/lighthouse"
   ],
-  "version": "1.3.2"
+  "version": "1.3.3"
 }
