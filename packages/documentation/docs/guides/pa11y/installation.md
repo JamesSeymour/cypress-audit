@@ -7,9 +7,9 @@
 In your favorite terminal:
 
 ```sh
-$ yarn add -D @cypress-audit/pa11y
+$ yarn add -D @jamesseymour/pa11y
 # or
-$ npm install --save-dev @cypress-audit/pa11y
+$ npm install --save-dev @jamesseymour/pa11y
 ```
 
 ## The server configuration
@@ -23,7 +23,7 @@ The following configuration allows Lighthouse and Cypress to make their verifica
 In the `cypress.config.js` file, make sure to have:
 
 ```javascript
-const { pa11y, prepareAudit } = require("@cypress-audit/pa11y");
+const { pa11y, prepareAudit } = require("@jamesseymour/pa11y");
 
 module.exports = {
   e2e: {
@@ -46,7 +46,7 @@ module.exports = {
 In the `cypress/plugins/index.js` file, make sure to have:
 
 ```javascript
-const { pa11y, prepareAudit } = require("@cypress-audit/pa11y");
+const { pa11y, prepareAudit } = require("@jamesseymour/pa11y");
 
 module.exports = (on, config) => {
   on("before:browser:launch", (browser = {}, launchOptions) => {
@@ -64,7 +64,7 @@ module.exports = (on, config) => {
 When adding the following line in the `cypress/support/commands.js` file, you will be able to use `cy.pa11y` inside your Cypress tests:
 
 ```javascript
-import "@cypress-audit/pa11y/commands";
+import "@jamesseymour/pa11y/commands";
 ```
 
 You can call `cy.pa11y(opts)` with `opts` being any kind of [the pa11y options](https://github.com/pa11y/pa11y#configuration).

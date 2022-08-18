@@ -10,4 +10,4 @@ For example, how can I verify the performance and accessibility status of a page
 
 This is cumbersome because I already have my authentication logic and shortcuts managed by Cypress: why should I add more complexity in my tests?
 
-The idea behind `@cypress-audit/*` is to aggregate all the underlying configurations behind dedicated [Cypress custom commands](https://docs.cypress.io/api/cypress-api/custom-commands.html): you can benefit from your own custom commands and you can run cross-cutting verifications directly inside your tests.
+The idea behind `@jamesseymour/*` is to aggregate all the underlying configurations behind dedicated [Cypress custom commands](https://docs.cypress.io/api/cypress-api/custom-commands.html): you can benefit from your own custom commands and you can run cross-cutting verifications directly inside your tests.

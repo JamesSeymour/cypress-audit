@@ -7,9 +7,9 @@
 In your favorite terminal:
 
 ```sh
-$ yarn add -D @cypress-audit/lighthouse
+$ yarn add -D @jamesseymour/lighthouse
 # or
-$ npm install --save-dev @cypress-audit/lighthouse
+$ npm install --save-dev @jamesseymour/lighthouse
 ```
 
 ## The server configuration
@@ -23,8 +23,8 @@ The following configuration allows Lighthouse and Cypress to make their verifica
 In the `cypress.config.js` file, make sure to have:
 
 ```javascript
-const { lighthouse, prepareAudit } = require("@cypress-audit/lighthouse");
-const { pa11y } = require("@cypress-audit/pa11y");
+const { lighthouse, prepareAudit } = require("@jamesseymour/lighthouse");
+const { pa11y } = require("@jamesseymour/pa11y");
 
 module.exports = {
   e2e: {
@@ -48,7 +48,7 @@ module.exports = {
 In the `cypress/plugins/index.js` file, make sure to have:
 
 ```javascript
-const { lighthouse, prepareAudit } = require("@cypress-audit/lighthouse");
+const { lighthouse, prepareAudit } = require("@jamesseymour/lighthouse");
 
 module.exports = (on, config) => {
   on("before:browser:launch", (browser = {}, launchOptions) => {
@@ -66,7 +66,7 @@ module.exports = (on, config) => {
 When adding the following line in the `cypress/support/commands.js` file, you will be able to use `cy.lighthouse` inside your Cypress tests:
 
 ```javascript
-import "@cypress-audit/lighthouse/commands";
+import "@jamesseymour/lighthouse/commands";
 ```
 
 You can then call `cy.lighthouse()` in your Cypress tests.

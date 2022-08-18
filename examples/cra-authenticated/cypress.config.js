@@ -1,5 +1,5 @@
-const { lighthouse, prepareAudit } = require("@cypress-audit/lighthouse");
-const { pa11y } = require("@cypress-audit/pa11y");
+const { lighthouse, prepareAudit } = require("@jamesseymour/lighthouse");
+const { pa11y } = require("@jamesseymour/pa11y");
 
 module.exports = {
   lighthouse: {

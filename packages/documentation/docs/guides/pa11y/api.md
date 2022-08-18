@@ -9,7 +9,7 @@ To do so, you can pass a `callback` function to the task initializer. Then, when
 In the `cypress/plugins/index.js` file:
 
 ```javascript
-const { pa11y, prepareAudit } = require("@cypress-audit/pa11y");
+const { pa11y, prepareAudit } = require("@jamesseymour/pa11y");
 
 module.exports = (on, config) => {
   on("before:browser:launch", (browser = {}, launchOptions) => {

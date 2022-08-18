@@ -9,7 +9,7 @@ To do so, you can pass a `callback` function to the task initializer. Then, when
 In the `cypress/plugins/index.js` file:
 
 ```javascript
-const { lighthouse, prepareAudit } = require("@cypress-audit/lighthouse");
+const { lighthouse, prepareAudit } = require("@jamesseymour/lighthouse");
 
 module.exports = (on, config) => {
   on("before:browser:launch", (browser = {}, launchOptions) => {
@@ -48,7 +48,7 @@ cy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig);
 Secondly, whilst reading the raw report use `fs` to write the HTML report to disk.
 
 ```javascript
-const { lighthouse, prepareAudit } = require("@cypress-audit/lighthouse");
+const { lighthouse, prepareAudit } = require("@jamesseymour/lighthouse");
 const fs = require("fs");
 
 module.exports = (on, config) => {
