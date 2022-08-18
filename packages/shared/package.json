@@ -5,7 +5,10 @@
   "author": "Marvin FRACHET <marvin.frachet@gmail.com> (https://github.com/mfrachet)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mfrachet/cypress-audit"
+    "url": "https://github.com/JamesSeymour/cypress-audit"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "MIT",
   "scripts": {
